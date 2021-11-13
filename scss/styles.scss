@@ -1,6 +1,7 @@
 :root {
 	// theme light
 	--bgr-white: white;
+	--text-default: black;
 	--bgr-light: #f4f5f8;
 	--bgr-primary: #1c84ee;
 	--bgr-primary-hover: #0d6efd;
@@ -9,6 +10,8 @@
 	--bgr-shadow-light: 0 4px 20px 0 #00000024, 0 7px 10px -5px #1c84ee;
 }
 [data-theme="dark"] {
+	--text-default: white;
+
 	--bgr-white: #283046;
 	--bgr-light: #181d31;
 	--bgr-primary: #2070b7;
@@ -86,15 +89,15 @@ body {
 }
 .sb-nav-fixed .sb-topnav {
 	background-color: var(--bgr-primary);
-	color: var(--bgr-white);
+	color: var(--text-default);
 	box-shadow: 0 0.2rem 0.5rem #12263f4d;
 	z-index: 1039;
 }
 .sb-nav-fixed .sb-topnav #sidebarToggle {
-	color: var(--bgr-white);
+	color: white;
 }
 .sb-nav-fixed .sb-topnav .navbar-brand {
-	color: var(--bgr-white);
+	color: white;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
 	width: 260px;
@@ -150,7 +153,7 @@ body {
 	font-weight: 600;
 }
 .nav-link.dropdown-toggle {
-	color: var(--bgr-white);
+	color: white;
 }
 #layoutSidenav_nav ul {
 	padding: 0;
@@ -168,10 +171,10 @@ body {
 	border-radius: 3px;
 }
 .sb-sidenav .sb-sidenav-menu .nav .nav-link.active {
-	color: var(--bgr-white);
+	color: white;
 }
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
-	color: var(--bgr-white);
+	color: var(--text-default);
 }
 .sb-sidenav .sb-sidenav-menu .nav .nav-link {
 	display: flex;
@@ -222,11 +225,11 @@ body {
 	color: var(--bgr-white);
 }
 .sb-sidenav-light .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
-	color: var(--bgr-white);
+	color: white;
 }
 .sb-sidenav-light .sb-sidenav-footer {
 	background-color: var(--bgr-primary);
-	color: var(--bgr-white);
+	color: white;
 }
 .nav .nav-link .sb-nav-link-icon,
 .sb-sidenav-menu .nav-link .sb-nav-link-icon {
@@ -344,9 +347,9 @@ footer {
 }
 .theme-switch {
 	display: inline-block;
-	height: 34px;
+	height: 19px;
 	position: relative;
-	width: 60px;
+	width: 46px;
 }
 
 .theme-switch input {
@@ -366,17 +369,18 @@ footer {
 
 .slider:before {
 	background-color: #fff;
-	bottom: 4px;
+	bottom: 2px;
 	content: "";
-	height: 26px;
-	left: 4px;
+	height: 15px;
+	left: 3px;
 	position: absolute;
+	-webkit-transition: .4s;
 	transition: .4s;
-	width: 26px;
+	width: 15px;
 }
 
 input:checked + .slider {
-	background-color: #66bb6a;
+	background-color: var(--bgr-white);
 }
 
 input:checked + .slider:before {
