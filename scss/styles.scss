@@ -27,6 +27,9 @@
 	--bgr-dark-bold: #202940;
 	--bgr-grey: #81919c;
 }
+.dark-mode-toggle {
+	display: none;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -87,6 +90,7 @@ body {
 	right: 0;
 	left: 0;
 	z-index: 1030;
+	background-color: white;
 }
 .sb-sidenav .sb-sidenav-footer {
 	padding: 0.75rem;
