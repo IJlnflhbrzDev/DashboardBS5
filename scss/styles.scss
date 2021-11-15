@@ -27,9 +27,7 @@
 	--bgr-dark-bold: #202940;
 	--bgr-grey: #81919c;
 }
-.dark-mode-toggle {
-	display: none;
-}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -357,6 +355,8 @@ footer {
 	align-items: center;
 
 	em {
+		display: none;
+
 		margin-left: 10px;
 		font-size: 1rem;
 		color: white;

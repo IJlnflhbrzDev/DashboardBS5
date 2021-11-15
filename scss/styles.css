@@ -97,10 +97,6 @@
   --bgr-grey: #81919c;
 }
 
-.dark-mode-toggle {
-  display: none;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -532,6 +528,7 @@ footer {
 }
 
 .theme-switch-wrapper em {
+  display: none;
   margin-left: 10px;
   font-size: 1rem;
   color: white;
