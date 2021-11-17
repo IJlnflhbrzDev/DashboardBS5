@@ -49,3 +49,22 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+
+// LOGIN / REGISTER PASSWORD TOGGLE
+// Password toggle
+
+function togglePassword() {
+    let loginRegister = document.getElementById("password-login-register-page");
+    if (loginRegister.type === "password") {
+        loginRegister.type = "text";
+        document
+            .getElementById("icon-toggle")
+            .setAttribute("fill", "#2ec49c");
+    } else {
+        loginRegister.type = "password";
+        document
+            .getElementById("icon-toggle")
+            .setAttribute("fill", "#CACBCE");
+    }
+}
